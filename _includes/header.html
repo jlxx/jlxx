@@ -5,24 +5,39 @@
 
 <header class="panel-cover {% if site.disable_landing_page %}panel-cover--collapsed{% endif %}"
   style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
+
+  
+
+  <div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    </div>
+  </div>
+
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
-        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <img src="{{ site.baseurl }}/images/profile.png" draggable="false" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
-        </a>
         <hr class="panel-cover__divider">
+        
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
 
         <div class="navigation-wrapper">
-
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
               <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog"
-                  class="blog-button">Blog</a></li>
+                class="blog-button">Blog</a></li>
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog"
+                  class="blog-button">About</a></li>
             </ul>
           </nav>
 
@@ -84,12 +99,12 @@
               {% endif %}
 
               <!-- RSS -->
-              <li class="navigation__item">
+              <!-- <li class="navigation__item">
                 <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
                   <i class="icon icon-rss"></i>
                   <span class="label">RSS</span>
                 </a>
-              </li>
+              </li> -->
 
             </ul>
           </nav>
