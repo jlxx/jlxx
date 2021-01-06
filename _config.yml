@@ -10,9 +10,9 @@ baseurl:
 author:
   name: 'Jame Lee'
   email: contact@jamelee.io
-  twitter_username: jlee_sm
+  twitter_username:
   facebook_username: 
-  github_username:  jamelee
+  github_username:  jlxx
   linkedin_username:  
 
 defaults:
